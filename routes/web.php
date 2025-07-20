@@ -14,5 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    //return view('welcome');
+    return 'Hello, Task List!';
+});
+
+Route::get('/hello', function (){
+    return 'Welcome to The course Mastering PHP';
+});
+Route::get('/greet/{name}', function ($name){
+    return 'Hello ' . $name . '!';
 });
